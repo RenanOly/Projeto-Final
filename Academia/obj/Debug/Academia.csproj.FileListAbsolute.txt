@@ -1,0 +1,13 @@
+C:\Users\Renan\source\repos\Academia\Academia\bin\Debug\Academia.exe.config
+C:\Users\Renan\source\repos\Academia\Academia\bin\Debug\Academia.exe
+C:\Users\Renan\source\repos\Academia\Academia\bin\Debug\Academia.pdb
+C:\Users\Renan\source\repos\Academia\Academia\obj\Debug\Academia.csprojAssemblyReference.cache
+C:\Users\Renan\source\repos\Academia\Academia\obj\Debug\Academia.Login.resources
+C:\Users\Renan\source\repos\Academia\Academia\obj\Debug\Academia.Properties.Resources.resources
+C:\Users\Renan\source\repos\Academia\Academia\obj\Debug\Academia.csproj.GenerateResource.cache
+C:\Users\Renan\source\repos\Academia\Academia\obj\Debug\Academia.exe
+C:\Users\Renan\source\repos\Academia\Academia\obj\Debug\Academia.pdb
+C:\Users\Renan\source\repos\Academia\Academia\bin\Debug\DAO.exe
+C:\Users\Renan\source\repos\Academia\Academia\bin\Debug\DAO.pdb
+C:\Users\Renan\source\repos\Academia\Academia\bin\Debug\DAO.exe.config
+C:\Users\Renan\source\repos\Academia\Academia\obj\Debug\Academia.csproj.CopyComplete

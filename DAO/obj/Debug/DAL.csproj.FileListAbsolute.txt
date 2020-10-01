@@ -1,0 +1,6 @@
+C:\Users\Renan\source\repos\Academia\DAO\bin\Debug\DAO.exe.config
+C:\Users\Renan\source\repos\Academia\DAO\bin\Debug\DAO.exe
+C:\Users\Renan\source\repos\Academia\DAO\bin\Debug\DAO.pdb
+C:\Users\Renan\source\repos\Academia\DAO\obj\Debug\DAO.exe
+C:\Users\Renan\source\repos\Academia\DAO\obj\Debug\DAO.pdb
+C:\Users\Renan\source\repos\Academia\DAO\obj\Debug\DAL.csprojAssemblyReference.cache
