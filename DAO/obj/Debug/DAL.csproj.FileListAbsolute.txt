@@ -4,3 +4,13 @@ C:\Users\Renan\source\repos\Academia\DAO\bin\Debug\DAO.pdb
 C:\Users\Renan\source\repos\Academia\DAO\obj\Debug\DAO.exe
 C:\Users\Renan\source\repos\Academia\DAO\obj\Debug\DAO.pdb
 C:\Users\Renan\source\repos\Academia\DAO\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\Renan\Desktop\Projeto-Final\DAO\bin\Debug\DAO.pdb
+C:\Users\Renan\Desktop\Projeto-Final\DAO\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\Renan\Desktop\Projeto-Final\DAO\obj\Debug\DAO.pdb
+C:\Users\Renan\Desktop\Projeto-Final\DAO\bin\Debug\DAO.dll.config
+C:\Users\Renan\Desktop\Projeto-Final\DAO\bin\Debug\DAO.dll
+C:\Users\Renan\Desktop\Projeto-Final\DAO\bin\Debug\Model.dll
+C:\Users\Renan\Desktop\Projeto-Final\DAO\bin\Debug\Model.pdb
+C:\Users\Renan\Desktop\Projeto-Final\DAO\bin\Debug\Model.dll.config
+C:\Users\Renan\Desktop\Projeto-Final\DAO\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\Renan\Desktop\Projeto-Final\DAO\obj\Debug\DAO.dll

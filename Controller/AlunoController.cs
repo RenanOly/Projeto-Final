@@ -3,13 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Model;
+using DAL;
 namespace Controller
 {
-    class Program
+    public class AlunoController
     {
-        static void Main(string[] args)
+        public static void Inserir(Aluno novo)
         {
+            AlunoDAL.Inserir(novo);
         }
     }
 }

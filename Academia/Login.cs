@@ -25,8 +25,15 @@ namespace Academia
 
         private void button1_Click(object sender, EventArgs e)
         {
-             MessageBox.Show( UsuarioDAL.logar(textBox1.Text,textBox2.Text));
-            
+            if (UsuarioDAL.logar(textBox1.Text, textBox2.Text))
+            {
+                new TelaAdmin().ShowDialog();
+            }
+            else
+            {
+                
+            }
+           
  
 
         }

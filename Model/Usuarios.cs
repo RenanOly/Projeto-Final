@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Model
 {
-    class Usuarios
+   public class Usuarios
     {
         public int? Id { get; set; }
         public string Nome { get; set; }
@@ -15,7 +15,7 @@ namespace Model
         public string Telefone { get; set; }
         public string Login { get; set; }
         public string senha { get; set; }
-        public bool Situacao { get; set; }
+        public int Situacao { get; set; }
 
     }
 }

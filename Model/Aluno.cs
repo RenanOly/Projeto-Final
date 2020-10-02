@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 namespace Model
 {
-    class Aluno:Usuarios
+    public class Aluno:Usuarios
     {
     }
 }

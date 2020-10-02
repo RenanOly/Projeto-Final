@@ -10,9 +10,10 @@ namespace DAL
     public static class UsuarioDAL
     {
 
-        public static string logar(string nome, string senha)
+        public static bool logar(string nome, string senha)
         {
-            string a;
+            
+            bool a =false;
             SqlConnection conexao = new SqlConnection();
             conexao.ConnectionString = Configuracao.ConnectionString;
             try
@@ -34,13 +35,14 @@ namespace DAL
             ;
             if (reader.Read())
             {
-                a = "Logado!";
-            }
-            else
-            {
-                a = "Usuário ou senha inválidos";
+
+                if (reader["Nome"].ToString() == "Admin")
+                {
+                    a = true;
+                }
             }
 
+            conexao.Close();
             return a;
         }
     }
