@@ -70,6 +70,18 @@
     <Compile Include="TelaAdmin.Designer.cs">
       <DependentUpon>TelaAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="TelaProfessor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaProfessor.Designer.cs">
+      <DependentUpon>TelaProfessor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VincularAluno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VincularAluno.Designer.cs">
+      <DependentUpon>VincularAluno.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="CadastroGeral.resx">
       <DependentUpon>CadastroGeral.cs</DependentUpon>
     </EmbeddedResource>
@@ -87,6 +99,12 @@
     </Compile>
     <EmbeddedResource Include="TelaAdmin.resx">
       <DependentUpon>TelaAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaProfessor.resx">
+      <DependentUpon>TelaProfessor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VincularAluno.resx">
+      <DependentUpon>VincularAluno.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

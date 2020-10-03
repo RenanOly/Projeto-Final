@@ -72,8 +72,14 @@ namespace Academia
                             novo.Login = textBox5.Text;
                             novo.senha = textBox6.Text;
                             novo.Situacao = 1;
-                            AlunoController.Inserir(novo);
-                            MessageBox.Show("Cadastro realizado com sucesso!");
+                            if (AlunoController.Inserir(novo))
+                            {
+                                MessageBox.Show("Cadastro realizado com sucesso!");
+                            }
+                            else
+                            {
+                                MessageBox.Show("Usuário já existente!");
+                            }
 
                         }
 

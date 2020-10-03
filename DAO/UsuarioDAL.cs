@@ -35,15 +35,13 @@ namespace DAL
             ;
             if (reader.Read())
             {
+                conexao.Close();
+                return  true;
 
-                if (reader["Nome"].ToString() == "Admin")
-                {
-                    a = true;
-                }
             }
+            return false;
+            
 
-            conexao.Close();
-            return a;
         }
     }
 }

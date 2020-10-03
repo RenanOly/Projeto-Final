@@ -9,9 +9,20 @@ namespace Controller
 {
     public class AlunoController
     {
-        public static void Inserir(Aluno novo)
+        public static bool Inserir(Aluno novo)
         {
-            AlunoDAL.Inserir(novo);
+            return AlunoDAL.Inserir(novo);
         }
+        public static bool RetornarAluno(string CPF)
+        {
+            return AlunoDAL.VincularProfessor(CPF); 
+        }
+
+        public static List<Aluno> BuscarAlunos()
+        {
+            return AlunoDAL.BuscarUsuarios();
+
+        }
+
     }
 }

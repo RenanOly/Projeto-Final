@@ -32,3 +32,5 @@ C:\Users\Renan\Desktop\Projeto-Final\Academia\bin\Debug\Controller.dll.config
 C:\Users\Renan\Desktop\Projeto-Final\Academia\bin\Debug\DAO.dll.config
 C:\Users\Renan\Desktop\Projeto-Final\Academia\bin\Debug\Model.pdb
 C:\Users\Renan\Desktop\Projeto-Final\Academia\bin\Debug\Model.dll.config
+C:\Users\Renan\Desktop\Projeto-Final\Academia\obj\Debug\Academia.TelaProfessor.resources
+C:\Users\Renan\Desktop\Projeto-Final\Academia\obj\Debug\Academia.VincularAluno.resources
