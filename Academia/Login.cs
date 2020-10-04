@@ -37,6 +37,7 @@ namespace Academia
                 else
                 {
                     
+                    new TelaUsuario().ShowDialog();
                 }
                 
             }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Model
 {
-    class ExerciciosProgramados
+    public class ExerciciosProgramados
     {
         public DateTime DataInicio { get; set; }
         public DateTime DataTermino { get; set; }

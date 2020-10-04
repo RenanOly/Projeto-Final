@@ -37,7 +37,12 @@ namespace Academia
 
         private void button2_Click(object sender, EventArgs e)
         {
+            new CadastroExercicios().ShowDialog();
+        }
 
+        private void button4_Click(object sender, EventArgs e)
+        {
+            new ProgramarExercicios().ShowDialog();
         }
     }
 }

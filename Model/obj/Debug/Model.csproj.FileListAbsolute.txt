@@ -1,6 +1,6 @@
-C:\Users\Renan\Desktop\Projeto-Final\Model\obj\Debug\Model.csprojAssemblyReference.cache
 C:\Users\Renan\Desktop\Projeto-Final\Model\bin\Debug\Model.dll.config
 C:\Users\Renan\Desktop\Projeto-Final\Model\bin\Debug\Model.dll
 C:\Users\Renan\Desktop\Projeto-Final\Model\bin\Debug\Model.pdb
+C:\Users\Renan\Desktop\Projeto-Final\Model\obj\Debug\Model.csprojAssemblyReference.cache
 C:\Users\Renan\Desktop\Projeto-Final\Model\obj\Debug\Model.dll
 C:\Users\Renan\Desktop\Projeto-Final\Model\obj\Debug\Model.pdb

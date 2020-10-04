@@ -4,16 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
-
+using System.IO;
 namespace DAL
 {
     public static class UsuarioDAL
     {
 
+        
         public static bool logar(string nome, string senha)
         {
             
-            bool a =false;
+           
             SqlConnection conexao = new SqlConnection();
             conexao.ConnectionString = Configuracao.ConnectionString;
             try
@@ -35,6 +36,10 @@ namespace DAL
             ;
             if (reader.Read())
             {
+                StreamWriter arq = new StreamWriter("login.txt");
+                arq.WriteLine(reader["Cpf"]);
+                arq.Close();
+
                 conexao.Close();
                 return  true;
 

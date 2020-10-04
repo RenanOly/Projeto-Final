@@ -7,24 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using Controller;
 namespace Academia
 {
-    public partial class TelaAdmin : Form
+    public partial class CadastroExercicios : Form
     {
-        public TelaAdmin()
+        public CadastroExercicios()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            new CadastroGeral().ShowDialog();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
+            ExercicioController.CadastraExercicio(textBox1.Text, textBox2.Text);
+            this.Close();
         }
     }
 }

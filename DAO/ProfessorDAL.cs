@@ -13,7 +13,7 @@ namespace DAL
 
         public static bool Logar(string nome, string senha)
         {
-            bool a = false;
+            
             SqlConnection conexao = new SqlConnection();
             conexao.ConnectionString = Configuracao.ConnectionString;
             try

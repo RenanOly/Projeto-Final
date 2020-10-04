@@ -13,7 +13,7 @@ namespace DAL
 
 
 
-
+     
         public static List<Aluno> BuscarUsuarios()
         {
             StreamReader arq = new StreamReader("login.txt");

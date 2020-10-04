@@ -50,6 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CadastroExercicios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastroExercicios.Designer.cs">
+      <DependentUpon>CadastroExercicios.cs</DependentUpon>
+    </Compile>
     <Compile Include="CadastroGeral.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +69,12 @@
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
+    <Compile Include="ProgramarExercicios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProgramarExercicios.Designer.cs">
+      <DependentUpon>ProgramarExercicios.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TelaAdmin.cs">
       <SubType>Form</SubType>
@@ -76,17 +88,29 @@
     <Compile Include="TelaProfessor.Designer.cs">
       <DependentUpon>TelaProfessor.cs</DependentUpon>
     </Compile>
+    <Compile Include="TelaUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaUsuario.Designer.cs">
+      <DependentUpon>TelaUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="VincularAluno.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="VincularAluno.Designer.cs">
       <DependentUpon>VincularAluno.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CadastroExercicios.resx">
+      <DependentUpon>CadastroExercicios.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CadastroGeral.resx">
       <DependentUpon>CadastroGeral.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgramarExercicios.resx">
+      <DependentUpon>ProgramarExercicios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -102,6 +126,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TelaProfessor.resx">
       <DependentUpon>TelaProfessor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaUsuario.resx">
+      <DependentUpon>TelaUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VincularAluno.resx">
       <DependentUpon>VincularAluno.cs</DependentUpon>

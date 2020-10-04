@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AlunoController.cs" />
+    <Compile Include="ExercicioController.cs" />
     <Compile Include="ProfessorController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
