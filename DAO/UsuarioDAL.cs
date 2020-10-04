@@ -33,17 +33,18 @@ namespace DAL
             comando.Connection = conexao;
             comando.CommandText = "select*from Usuario where Login='"+nome+"' and Senha= '"+senha+"' ;";
             reader = comando.ExecuteReader();
-            ;
+           
             if (reader.Read())
             {
                 StreamWriter arq = new StreamWriter("login.txt");
                 arq.WriteLine(reader["Cpf"]);
                 arq.Close();
-
+                reader.Close();
                 conexao.Close();
                 return  true;
 
             }
+            conexao.Close();
             return false;
             
 

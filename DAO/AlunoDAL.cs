@@ -13,7 +13,35 @@ namespace DAL
 
 
 
-     
+        public static string BuscarExercicios(string CPFAluno)
+        {
+            SqlConnection conexao = new SqlConnection();
+            conexao.ConnectionString = Configuracao.ConnectionString;
+            try
+            {
+                conexao.Open();
+            }
+            catch
+            {
+                throw new Exception("Erro na conexão com o banco de dados");
+            }
+
+            SqlCommand comando = new SqlCommand();
+            SqlDataReader reader = null;
+            comando.Connection = conexao;
+            comando.CommandText = "select*from Usuario where Cpf= '" + CPFAluno + "' ;";
+            reader = comando.ExecuteReader();
+            if (reader.Read())
+            {
+                return reader["Professor"].ToString();
+            }
+            else
+            {
+                throw new Exception("Este aluno não possui um professor!");
+               
+            }
+            
+        }
         public static List<Aluno> BuscarUsuarios()
         {
             StreamReader arq = new StreamReader("login.txt");

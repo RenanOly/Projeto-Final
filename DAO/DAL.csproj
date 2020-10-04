@@ -49,6 +49,7 @@
     <Compile Include="AlunoDAL.cs" />
     <Compile Include="Configuracao.cs" />
     <Compile Include="ExercicioDAL.cs" />
+    <Compile Include="FeedBackDAL.cs" />
     <Compile Include="ProfessorDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UsuarioDAL.cs" />

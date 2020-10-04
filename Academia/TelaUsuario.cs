@@ -16,7 +16,7 @@ namespace Academia
         public TelaUsuario()
         {
             InitializeComponent();
-            List<List<object>> exercicios = ExercicioController.BuscarExercicios();
+            List<List<object>> exercicios = ExercicioController.AlunoBuscarExercicios();
             Exercicios a = new Exercicios();
             ExerciciosProgramados b = new ExerciciosProgramados();
 
@@ -32,6 +32,17 @@ namespace Academia
 
         private void button1_Click(object sender, EventArgs e)
         {
+            string FeedBack = richTextBox1.Text;
+            if (FeedBackController.AdicionarFeedBack(FeedBack))
+            {
+                MessageBox.Show("FeedBack enviado!");
+                richTextBox1.Clear();
+            }
+            else
+            {
+                MessageBox.Show("FeedBack não enviado!");
+            }
+
 
         }
     }

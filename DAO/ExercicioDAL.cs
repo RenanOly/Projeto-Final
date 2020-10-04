@@ -13,11 +13,10 @@ namespace DAL
 
 
         
-        public static List<List<object>> RetornaExercicios()
+        public static List<List<object>> RetornaExercicios(string CPFProfessor)
         {
             
-            StreamReader arq = new StreamReader("login.txt");
-            string CPFProfessor = arq.ReadLine();
+           
 
 
             SqlConnection conexao = new SqlConnection();
@@ -88,7 +87,6 @@ namespace DAL
                 Exercicios.Add(ExerciciosProgramadosCopia[i]);
                 listaExercicios.Add(Exercicios);
             }
-            arq.Close();
             reader.Close();
             conexao.Close();
 

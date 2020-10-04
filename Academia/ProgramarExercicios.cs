@@ -46,5 +46,10 @@ namespace Academia
             ExercicioController.ProgramarExercicio(textBox1.Text, dateTimePicker1.Value.ToString("dd / MM / yyyy"), dateTimePicker2.Value.ToString("dd / MM / yyyy"), textBox2.Text, textBox3.Text);
           
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
