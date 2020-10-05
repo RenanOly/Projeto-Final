@@ -43,6 +43,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(283, 20);
             this.textBox1.TabIndex = 0;
+            this.textBox1.UseSystemPasswordChar = true;
             // 
             // textBox2
             // 
@@ -50,6 +51,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(283, 20);
             this.textBox2.TabIndex = 1;
+            this.textBox2.UseSystemPasswordChar = true;
             // 
             // textBox3
             // 
@@ -57,6 +59,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(283, 20);
             this.textBox3.TabIndex = 2;
+            this.textBox3.UseSystemPasswordChar = true;
             // 
             // button1
             // 
@@ -107,7 +110,9 @@
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "TrocarSenhaAdmin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TrocarSenhaAdmin";
             this.ResumeLayout(false);
             this.PerformLayout();

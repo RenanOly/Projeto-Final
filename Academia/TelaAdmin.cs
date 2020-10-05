@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Controller;
 using Model;
+using DAL;
 
 namespace Academia
 {
@@ -69,16 +70,18 @@ namespace Academia
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (DialogResult.Yes == MessageBox.Show("Tem certeza que deseja apagar TODOS os dados?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2))
-            {
-                FeedBackController.DeletaFeedBack();
-                AlunoController.DeletaAlunos();
-                ExercicioController.DeletarExerciciosProgramados();
-                ExercicioController.DeletarExercicios();
-                ProfessorController.DeletaProfessores();
-                
-            }
+            new ValidaSenhaAdmin().ShowDialog();
+            recarregarData();
+        }
 
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            int Linha = dataGridView1.CurrentRow.Index;
+            string situacao = dataGridView1.Rows[Linha].Cells[3].Value.ToString();
+            string usuario = dataGridView1.Rows[Linha].Cells[2].Value.ToString();
+            string cpf = dataGridView1.Rows[Linha].Cells[1].Value.ToString();
+            UsuarioDAL.MudarSituacao(situacao,usuario,cpf);
+            recarregarData();
         }
     }
 }

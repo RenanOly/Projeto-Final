@@ -63,7 +63,7 @@ namespace Academia
                 }
                 else
                 {
-                    MessageBox.Show("Usuário ou senha inválidos!");
+                    MessageBox.Show("Usuário ou senha inválidos!\nVerifique seu usuário e senha ou a situação com o Administrador! ");
                     
                 }
                 

@@ -12,7 +12,49 @@ namespace DAL
     public static class UsuarioDAL
     {
 
+        public static void MudarSituacao(string situacao, string TipoUsuario, string CPF)
+        {
+            string usuario = "Professor";
+            if (TipoUsuario == "Aluno")
+            {
+                usuario = "Usuario";
+            }
+    
+            SqlConnection conexao = new SqlConnection();
+            conexao.ConnectionString = Configuracao.ConnectionString;
+            try
+            {
+                conexao.Open();
 
+
+            }
+            catch
+            {
+                throw new Exception("Erro na conexão com o banco de dados");
+            }
+
+            SqlCommand comando = new SqlCommand();
+            SqlDataReader reader = null;
+            comando.Connection = conexao;
+            if (situacao == "Ativo")
+            {
+                comando.CommandText = "UPDATE "+usuario+" SET Situacao = 0 WHERE Cpf = '"+CPF+"';";
+
+            }
+            else
+            {
+                comando.CommandText = "UPDATE " + usuario + " SET Situacao = 1 WHERE Cpf = '" + CPF + "';";
+
+            }
+            try
+            {
+                comando.ExecuteNonQuery();
+            }
+            catch
+            {
+                throw new Exception("Erro ao alterar situação!");
+            }
+        }
         public static bool AlterarSenhaAdmin(string SenhaAtual, string NovaSenha)
         {
             SHA256 mySHA256 = SHA256.Create();
@@ -138,7 +180,7 @@ namespace DAL
             SqlCommand comando = new SqlCommand();
             SqlDataReader reader = null;
             comando.Connection = conexao;
-            comando.CommandText = "select*from Usuario where Login='"+nome+"' and Senha= '"+senhaHash+"' ;";
+            comando.CommandText = "select*from Usuario where Login='"+nome+"' and Senha= '"+senhaHash+"' and Situacao = 1 ;";
             reader = comando.ExecuteReader();
            
             if (reader.Read())

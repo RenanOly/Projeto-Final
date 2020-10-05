@@ -101,7 +101,7 @@ namespace DAL
             SqlCommand comando = new SqlCommand();
             SqlDataReader reader = null;
             comando.Connection = conexao;
-            comando.CommandText = "select*from Professor where Login='" + nome + "' and Senha= '" + senhaHash + "' ;";
+            comando.CommandText = "select*from Professor where Login='" + nome + "' and Senha= '" + senhaHash + "' and Situacao = 1  ;";
             reader = comando.ExecuteReader();
             if (reader.Read())
             {

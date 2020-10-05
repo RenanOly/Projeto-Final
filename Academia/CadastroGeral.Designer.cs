@@ -116,18 +116,18 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(22, 130);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(27, 13);
+            this.label3.Size = new System.Drawing.Size(83, 13);
             this.label3.TabIndex = 9;
-            this.label3.Text = "CPF";
+            this.label3.Text = "CPF (11 dígitos)";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(22, 172);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(49, 13);
+            this.label4.Size = new System.Drawing.Size(105, 13);
             this.label4.TabIndex = 10;
-            this.label4.Text = "Telefone";
+            this.label4.Text = "Telefone (15 dígitos)";
             // 
             // label5
             // 
@@ -143,9 +143,9 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(22, 260);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(38, 13);
+            this.label6.Size = new System.Drawing.Size(166, 13);
             this.label6.TabIndex = 12;
-            this.label6.Text = "Senha";
+            this.label6.Text = "Senha (sem caracteres especiais)";
             // 
             // button1
             // 
@@ -187,7 +187,9 @@
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "CadastroGeral";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CadastroGeral";
             this.ResumeLayout(false);
             this.PerformLayout();

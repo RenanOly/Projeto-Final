@@ -112,6 +112,12 @@
     <Compile Include="TrocarSenhaProfessor.Designer.cs">
       <DependentUpon>TrocarSenhaProfessor.cs</DependentUpon>
     </Compile>
+    <Compile Include="ValidaSenhaAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ValidaSenhaAdmin.Designer.cs">
+      <DependentUpon>ValidaSenhaAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="VincularAluno.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,6 +162,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TrocarSenhaProfessor.resx">
       <DependentUpon>TrocarSenhaProfessor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ValidaSenhaAdmin.resx">
+      <DependentUpon>ValidaSenhaAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VincularAluno.resx">
       <DependentUpon>VincularAluno.cs</DependentUpon>

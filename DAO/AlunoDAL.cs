@@ -79,6 +79,15 @@ namespace DAL
         }
         public static void DeletaAlunos()
         {
+            SHA256 mySHA256 = SHA256.Create();
+
+            byte[] hashValue = mySHA256.ComputeHash(Encoding.UTF8.GetBytes("admin"));
+            string senhaHash = "";
+            for (int i = 0; i < hashValue.Length; i++)
+            {
+                senhaHash += hashValue[i].ToString("x2");
+            }
+
             SqlConnection conexao = new SqlConnection();
             conexao.ConnectionString = Configuracao.ConnectionString;
             try
@@ -103,6 +112,15 @@ namespace DAL
             catch
             {
                 throw new Exception("Erro ao deletar Alunos!");
+            }
+            comando.CommandText = "UPDATE Usuario SET Senha = '" + senhaHash + "' WHERE Login = 'admin';";
+            try
+            {
+                comando.ExecuteNonQuery();
+            }
+            catch
+            {
+                throw new Exception("Erro ao recadastrar admin!");
             }
             conexao.Close();
         }
