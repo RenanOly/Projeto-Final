@@ -12,6 +12,69 @@ namespace DAL
     public static class ProfessorDAL
     {
 
+
+        public static bool AlterarSenha(string SenhaAtual, string NovaSenha)
+        {
+            StreamReader arq = new StreamReader("login.txt");
+            string CPFProfessor = arq.ReadLine();
+            arq.Close();
+            SHA256 mySHA256 = SHA256.Create();
+
+            byte[] hashValue = mySHA256.ComputeHash(Encoding.UTF8.GetBytes(SenhaAtual));
+            string senhaHash = "";
+            for (int i = 0; i < hashValue.Length; i++)
+            {
+                senhaHash += hashValue[i].ToString("x2");
+            }
+
+            SqlConnection conexao = new SqlConnection();
+            conexao.ConnectionString = Configuracao.ConnectionString;
+            try
+            {
+                conexao.Open();
+
+
+            }
+            catch
+            {
+                throw new Exception("Erro na conexão com o banco de dados");
+            }
+
+            SqlCommand comando = new SqlCommand();
+            SqlDataReader reader = null;
+            comando.Connection = conexao;
+            comando.CommandText = "select*from Professor where Cpf= '" + CPFProfessor + "' and Senha = '"+senhaHash+"' ;";
+            reader = comando.ExecuteReader();
+            if (reader.Read())
+            {
+                reader.Close();
+                hashValue = mySHA256.ComputeHash(Encoding.UTF8.GetBytes(NovaSenha));
+                senhaHash = "";
+                for (int i = 0; i < hashValue.Length; i++)
+                {
+                    senhaHash += hashValue[i].ToString("x2");
+                }
+                comando.CommandText = "UPDATE Professor SET Senha = '" + senhaHash + "' WHERE Cpf = '"+ CPFProfessor + "';";
+                try
+                {
+                    comando.ExecuteNonQuery();
+                    return true;
+                }
+                catch
+                {
+                    throw new Exception("Erro ao gravar senha!");
+                }
+                finally
+                {
+                    conexao.Close();
+
+                }
+
+
+            }
+            return false;
+
+        }
         public static bool Logar(string nome, string senha)
         {
             SHA256 mySHA256 = SHA256.Create();

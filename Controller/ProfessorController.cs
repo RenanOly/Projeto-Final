@@ -25,7 +25,10 @@ namespace Controller
         {
             ProfessorDAL.DeletaProfessores();
         }
-
+        public static bool AlterarSenha(string Senha, string NovaSenha)
+        {
+            return ProfessorDAL.AlterarSenha(Senha, NovaSenha);
+        }
 
 
     }

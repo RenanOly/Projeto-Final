@@ -6,12 +6,77 @@ using System.Threading.Tasks;
 using Model;
 using System.Data.SqlClient;
 using System.IO;
+using System.Security.Cryptography;
 namespace DAL
 {
     public static class AlunoDAL
     {
 
 
+
+
+        public static bool AlterarSenha(string SenhaAtual, string NovaSenha)
+        {
+            StreamReader arq = new StreamReader("login.txt");
+            string CPFAluno = arq.ReadLine();
+            arq.Close();
+            SHA256 mySHA256 = SHA256.Create();
+
+            byte[] hashValue = mySHA256.ComputeHash(Encoding.UTF8.GetBytes(SenhaAtual));
+            string senhaHash = "";
+            for (int i = 0; i < hashValue.Length; i++)
+            {
+                senhaHash += hashValue[i].ToString("x2");
+            }
+
+            SqlConnection conexao = new SqlConnection();
+            conexao.ConnectionString = Configuracao.ConnectionString;
+            try
+            {
+                conexao.Open();
+
+
+            }
+            catch
+            {
+                throw new Exception("Erro na conexão com o banco de dados");
+            }
+
+            SqlCommand comando = new SqlCommand();
+            SqlDataReader reader = null;
+            comando.Connection = conexao;
+            comando.CommandText = "select*from Usuario where Cpf= '" + CPFAluno + "' and Senha = '" + senhaHash + "' ;";
+            reader = comando.ExecuteReader();
+            if (reader.Read())
+            {
+                reader.Close();
+                hashValue = mySHA256.ComputeHash(Encoding.UTF8.GetBytes(NovaSenha));
+                senhaHash = "";
+                for (int i = 0; i < hashValue.Length; i++)
+                {
+                    senhaHash += hashValue[i].ToString("x2");
+                }
+                comando.CommandText = "UPDATE Usuario SET Senha = '" + senhaHash + "' WHERE Cpf = '" + CPFAluno + "';";
+                try
+                {
+                    comando.ExecuteNonQuery();
+                    return true;
+                }
+                catch
+                {
+                    throw new Exception("Erro ao gravar senha!");
+                }
+                finally
+                {
+                    conexao.Close();
+
+                }
+
+
+            }
+            return false;
+
+        }
         public static void DeletaAlunos()
         {
             SqlConnection conexao = new SqlConnection();

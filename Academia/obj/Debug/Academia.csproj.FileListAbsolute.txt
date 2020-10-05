@@ -91,3 +91,5 @@ C:\Users\Renan\Desktop\ProjetoXandão\Projeto-Final-master\Academia\obj\Debug\Ac
 C:\Users\Renan\Desktop\ProjetoXandão\Projeto-Final-master\Academia\obj\Debug\Academia.csproj.CopyComplete
 C:\Users\Renan\Desktop\ProjetoXandão\Projeto-Final-master\Academia\obj\Debug\Academia.exe
 C:\Users\Renan\Desktop\ProjetoXandão\Projeto-Final-master\Academia\obj\Debug\Academia.pdb
+C:\Users\Renan\Desktop\ProjetoXandão\Projeto-Final-master\Academia\obj\Debug\Academia.TrocarSenhaProfessor.resources
+C:\Users\Renan\Desktop\ProjetoXandão\Projeto-Final-master\Academia\obj\Debug\Academia.TrocarSenhaAluno.resources

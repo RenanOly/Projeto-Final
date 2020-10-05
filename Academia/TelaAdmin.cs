@@ -18,6 +18,7 @@ namespace Academia
         public TelaAdmin()
         {
             InitializeComponent();
+            dataGridView1.ReadOnly = true;
             recarregarData();
         }
 

@@ -35,5 +35,10 @@ namespace Controller
             AlunoDAL.DeletaAlunos();
         }
 
+        public static bool AlterarSenha(string Senha, string NovaSenha)
+        {
+            return AlunoDAL.AlterarSenha(Senha, NovaSenha);
+        }
+
     }
 }

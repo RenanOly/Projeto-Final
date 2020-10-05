@@ -24,3 +24,13 @@ C:\Users\Renan\Desktop\Projeto-Final-master\DAO\obj\Debug\DAL.csprojAssemblyRefe
 C:\Users\Renan\Desktop\Projeto-Final-master\DAO\obj\Debug\DAL.csproj.CopyComplete
 C:\Users\Renan\Desktop\Projeto-Final-master\DAO\obj\Debug\DAO.dll
 C:\Users\Renan\Desktop\Projeto-Final-master\DAO\obj\Debug\DAO.pdb
+C:\Users\Renan\Desktop\ProjetoXandão\Projeto-Final-master\DAO\bin\Debug\DAO.dll.config
+C:\Users\Renan\Desktop\ProjetoXandão\Projeto-Final-master\DAO\bin\Debug\DAO.dll
+C:\Users\Renan\Desktop\ProjetoXandão\Projeto-Final-master\DAO\bin\Debug\DAO.pdb
+C:\Users\Renan\Desktop\ProjetoXandão\Projeto-Final-master\DAO\bin\Debug\Model.dll
+C:\Users\Renan\Desktop\ProjetoXandão\Projeto-Final-master\DAO\bin\Debug\Model.pdb
+C:\Users\Renan\Desktop\ProjetoXandão\Projeto-Final-master\DAO\bin\Debug\Model.dll.config
+C:\Users\Renan\Desktop\ProjetoXandão\Projeto-Final-master\DAO\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\Renan\Desktop\ProjetoXandão\Projeto-Final-master\DAO\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\Renan\Desktop\ProjetoXandão\Projeto-Final-master\DAO\obj\Debug\DAO.dll
+C:\Users\Renan\Desktop\ProjetoXandão\Projeto-Final-master\DAO\obj\Debug\DAO.pdb

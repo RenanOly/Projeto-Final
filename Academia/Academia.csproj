@@ -100,6 +100,18 @@
     <Compile Include="TrocarSenhaAdmin.Designer.cs">
       <DependentUpon>TrocarSenhaAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="TrocarSenhaAluno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrocarSenhaAluno.Designer.cs">
+      <DependentUpon>TrocarSenhaAluno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrocarSenhaProfessor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrocarSenhaProfessor.Designer.cs">
+      <DependentUpon>TrocarSenhaProfessor.cs</DependentUpon>
+    </Compile>
     <Compile Include="VincularAluno.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,6 +150,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TrocarSenhaAdmin.resx">
       <DependentUpon>TrocarSenhaAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrocarSenhaAluno.resx">
+      <DependentUpon>TrocarSenhaAluno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrocarSenhaProfessor.resx">
+      <DependentUpon>TrocarSenhaProfessor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VincularAluno.resx">
       <DependentUpon>VincularAluno.cs</DependentUpon>

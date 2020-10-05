@@ -112,15 +112,13 @@ namespace DAL
            
             comando.CommandText = "select*from Exercicios;";
             reader = comando.ExecuteReader();
-            int count = 0;
-            int aux = count;
             while (reader.Read())
             {
                 
-                for (int i = 0; i < IDExercicios.Count-aux; i++)
+                for (int i = 0; i < IDExercicios.Count; i++)
                 {
                     
-                    if (IDExercicios[aux] == (int)reader["ID"])
+                    if (IDExercicios[i] == (int)reader["ID"])
                     {
                         
                         a1 = new Exercicios();
@@ -128,10 +126,9 @@ namespace DAL
                         a1.Especificacoes = reader["Spec"].ToString();
                         ExerciciosCopia.Add(a1);
                     }
-                    aux++;
+                    
                 }
-                count++;
-                aux = count;
+                
                 
             }
             for (int i = 0; i < ExerciciosProgramadosCopia.Count; i++)

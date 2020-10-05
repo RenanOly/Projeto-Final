@@ -16,6 +16,7 @@ namespace Academia
         public TelaUsuario()
         {
             InitializeComponent();
+            dataGridView1.ReadOnly = true;
             RecarregarData();
 
             
@@ -51,6 +52,11 @@ namespace Academia
             }
 
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            new TrocarSenhaAluno().ShowDialog();
         }
     }
 }
