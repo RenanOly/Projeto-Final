@@ -1,0 +1,6 @@
+C:\Users\Renan\Desktop\Projeto-Final\Academia\obj\Release\Academia.csprojAssemblyReference.cache
+C:\Users\Renan\Desktop\Projeto-Final\Academia\obj\Release\Academia.CadastroGeral.resources
+C:\Users\Renan\Desktop\Projeto-Final\Academia\obj\Release\Academia.Login.resources
+C:\Users\Renan\Desktop\Projeto-Final\Academia\obj\Release\Academia.Properties.Resources.resources
+C:\Users\Renan\Desktop\Projeto-Final\Academia\obj\Release\Academia.TelaAdmin.resources
+C:\Users\Renan\Desktop\Projeto-Final\Academia\obj\Release\Academia.csproj.GenerateResource.cache
